@@ -44,6 +44,7 @@ This is a backend template using **Node.js**, **Express**, **TypeScript**, **Mon
 
 bash ```
 npm install
+
 ````
 
 3.	Set up environment variables:
@@ -56,71 +57,72 @@ npm install
 
 Running the Application
 
-	•	Development:
+    •	Development:
 
-	bash ```
-	npm run dev
-	```
+    bash ```
+    npm run dev
+    ```
 
-	•	Production (after building):
+    •	Production (after building):
 
-	bash ```
-	npm run build
-	npm start
-	```
+    bash ```
+    npm run build
+    npm start
+    ```
+
 Scripts
 
-	•	npm run dev - Starts the server in development mode with TypeScript and nodemon.
-	•	npm run build - Compiles TypeScript into JavaScript.
-	•	npm start - Runs the compiled JavaScript in production mode.
-	•	npm test - Runs tests using Jest.
-	•	npm run lint - Lints the code using ESLint.
-	•	npm run lint:fix - Fixes linting issues automatically.
-	•	npm run clean-up - Runs both lint fix and Prettier formatting.
+    •	npm run dev - Starts the server in development mode with TypeScript and nodemon.
+    •	npm run build - Compiles TypeScript into JavaScript.
+    •	npm start - Runs the compiled JavaScript in production mode.
+    •	npm test - Runs tests using Jest.
+    •	npm run lint - Lints the code using ESLint.
+    •	npm run lint:fix - Fixes linting issues automatically.
+    •	npm run clean-up - Runs both lint fix and Prettier formatting.
 
 API Documentation
 
 Authentication Routes
 
-	•	POST /api/v1/register - Register a new user.
-	•	POST /api/v1/login - Login with email and password to receive a JWT token.
+    •	POST /api/v1/register - Register a new user.
+    •	POST /api/v1/login - Login with email and password to receive a JWT token.
 
 User Routes
 
-	•	GET /api/v1/users - Fetch all users (authenticated route).
+    •	GET /api/v1/users - Fetch all users (authenticated route).
 
 Error Handling
 
 All errors are centrally handled using a custom error-handling middleware in src/middleware/errorHandler.ts.
 
-
 Testing
 
-	•	Unit and Integration Tests: This project uses Jest and Supertest.
-	•	Run tests:
+    •	Unit and Integration Tests: This project uses Jest and Supertest.
+    •	Run tests:
 
-		bash ```
-		npm run test
-		```
+    	bash ```
+    	npm run test
+    	```
+
 Logging
 
 Logs are stored in the logs folder:
-	•	combined.log - All logs.
-	•	error.log - Only errors.
+• combined.log - All logs.
+• error.log - Only errors.
 
 GitHub Actions & Workflows
 
 This template includes GitHub workflows for:
-	•	Linting - Checks code formatting and linting on pull requests.
-	•	Testing - Runs Jest tests on pull requests.
-	•	End-to-End (E2E) Testing - Runs Cypress tests (if configured) for integration testing.
+• Linting - Checks code formatting and linting on pull requests.
+• Testing - Runs Jest tests on pull requests.
+• End-to-End (E2E) Testing - Runs Cypress tests (if configured) for integration testing.
 
 Contribution Guidelines
 
 Pull Request Checklist
 
-	•	My code follows the style guidelines of this project.
-	•	I have performed a self-review of my code.
-	•	I have commented my code where necessary.
-	•	I have added tests that prove my fix is effective or that my feature works.
-	•	All tests pass locally and in CI.
+    •	My code follows the style guidelines of this project.
+    •	I have performed a self-review of my code.
+    •	I have commented my code where necessary.
+    •	I have added tests that prove my fix is effective or that my feature works.
+    •	All tests pass locally and in CI.
