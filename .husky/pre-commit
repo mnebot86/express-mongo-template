@@ -1,1 +1,1 @@
-npm run clean-up
+npm run clean-up && npm test 
